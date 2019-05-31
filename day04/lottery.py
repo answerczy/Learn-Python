@@ -29,13 +29,14 @@ def random_select():
 
     red_balls = [x for x in range(1,34)]
     selectd_balls = []
-    selectd_balls = sample(red_balls , 6)
+    selectd_balls = sample(red_balls , 6)   #sample函数返回不重复的数字
     selectd_balls.sort()
     selectd_balls.append(randint(1,16))
     return selectd_balls
 
 
 def main():
+    print(random_select())
     n = int(input('机选几注：'))
     for i in range(n):
         display(random_select())
