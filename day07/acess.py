@@ -23,7 +23,7 @@ def main():
 
 def main2():
     demo = Demo('hi')
-    #
+    #通过下划线类名显示
     demo._Demo__bar()
 
 if __name__ == '__main__':
