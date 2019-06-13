@@ -82,6 +82,8 @@ def main():
         isinstance(object, classinfo)参数
         -object -- 实例对象。
         -classinfo -- 可以是直接或间接类名、基本类型或者由它们组成的元组。
+        isinstance() 函数来判断一个对象是否是一个已知的类型，类似 type()。
+        issubclass() 函数用于判断参数是否是类型参数的子类。
         """
         if isinstance(emp, Programmer ):
             emp.working_hour = int(input('请输入%s本月工作时间:'%emp.name))
