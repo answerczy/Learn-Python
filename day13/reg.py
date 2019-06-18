@@ -26,7 +26,7 @@ def main():
 
 def email(e):
     if len(e) >= 5:
-        if re.match("[a-zA-Z0-9]+\@+[a-zA-Z0-9]+\.+[a-zA-Z]", e) != None:
+        if re.match("^[a-z0-9A-Z\.\-\_]+\@[a-z0-9\-\_]+(\.[a-z0-9\-\_]+){1,4}$", e) != None:
             print('邮箱格式正确')
         else:
             print('邮箱格式有误！')
