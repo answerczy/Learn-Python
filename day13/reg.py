@@ -22,4 +22,27 @@ def main():
     if m1 and m2:
         print('你输入的信息是有效的')
 
-main()
+
+
+def email(e):
+    if len(e) >= 5:
+        if re.match("[a-zA-Z0-9]+\@+[a-zA-Z0-9]+\.+[a-zA-Z]", e) != None:
+            print('邮箱格式正确')
+        else:
+            print('邮箱格式有误！')
+
+
+def strings(url):
+    listt = ['.php', '.html', '.asp', '.jsp']
+    for lis in listt:
+        suffix = re.findall(lis, url)
+        if len(suffix) > 0:
+            print(lis)
+
+# # e = input('请输入email：')
+# # print(e)
+# # print(type(e))
+# #main()
+# email('da5da@qq.com')
+url = 'http://www.cnblogs.com/fnng/archive/2013/05/20/3089816.html'
+a = strings(url)
